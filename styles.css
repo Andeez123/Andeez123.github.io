@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+#chart_container {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering if parent has height */
+    width: 100%;
+  }
+
+  body {
+  font-family: Arial, sans-serif;
+}

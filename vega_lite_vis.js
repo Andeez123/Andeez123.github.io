@@ -1,4 +1,4 @@
-var vg_1 = "intro.vg.json"
+var vg_1 = "total_launches.vg.json"
 
 vegaEmbed("#bar_chart", vg_1).then(function (result){
     

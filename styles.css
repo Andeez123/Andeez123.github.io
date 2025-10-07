@@ -6,8 +6,8 @@ h1, h2, h3 {
     padding-top: 20px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: center;  /* horizontal centering */
-    align-items: center;      /* vertical centering if parent has height */
+    justify-content: center;  
+    align-items: center;      
     width: 100%;
   }
 

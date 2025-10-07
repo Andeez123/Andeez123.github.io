@@ -6,6 +6,7 @@ h1, h2, h3 {
 
 #chart_container {
     padding-top: 20px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;  /* horizontal centering */
     align-items: center;      /* vertical centering if parent has height */

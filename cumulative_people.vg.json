@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Number of People in Space per Country",
+    "fontSize": 20
+  },
+  "width": 900,
+  "height": 400,
+  "data": {"url": "cumulated.csv"},
+  
+  "params": [
+    {
+      "name": "PeopleAbove",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "name": "Minimum People in Space: "
+      }
+    }
+  ],
+
+  "transform": [
+    {"filter": "datum.Total_People >= PeopleAbove"}
+  ],
+
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 4},
+      "encoding": {
+        "x": {
+          "field": "Entity",
+          "type": "nominal",
+          "title": "Country",
+          "sort": {"field": "Total_People", "order": "descending"},
+          "axis": {
+            "labelFontSize": 12,
+            "labelFontWeight": "bold",
+            "titleFontSize": 18,
+            "titlePadding": -5,
+            "labelAngle": -30
+          }
+        },
+        "y": {
+          "field": "Total_People",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"type": "sqrt"}
+        },
+        "color": {
+          "field": "Total_People",
+          "type": "quantitative",
+          "title": "Total People",
+          "scale": {"type": "sqrt", "scheme": "blues"},
+          "legend": {
+            "title": "People in Space",
+            "orient": "right",
+            "direction": "vertical"
+          }
+        },
+        "tooltip": [
+          {"field": "Entity", "type": "nominal", "title": "Country"},
+          {"field": "Total_People", "type": "quantitative", "title": "Total People"}
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Entity": "United States", "Total_People": 397, "note": "Largest"}
+        ]
+      },
+      "mark": {"type": "text", "align": "center", "dy": 15, "fontSize": 11, "fontWeight": "bold", "color": "red"},
+      "encoding": {
+        "x": {"field": "Entity", "type": "nominal"},
+        "y": {"field": "Total_People", "type": "quantitative"},
+        "text": {"field": "note"}
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"Entity": "Russia", "Total_People": 124, "note": "Second largest"}
+        ]
+      },
+      "mark": {"type": "text", "align": "center", "dy": -8, "fontSize": 11, "fontWeight": "bold", "color": "mediumblue"},
+      "encoding": {
+        "x": {"field": "Entity", "type": "nominal"},
+        "y": {"field": "Total_People", "type": "quantitative"},
+        "text": {"field": "note"}
+      }
+    }
+  ]
+}

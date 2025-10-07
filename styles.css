@@ -2,8 +2,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-
-
 #chart_container {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -13,6 +11,6 @@ h1, h2, h3 {
     width: 100%;
   }
 
-  body {
+body {
   font-family: Arial, sans-serif;
 }

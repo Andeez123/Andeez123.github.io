@@ -1,6 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Total Space Launches by Country",
+    "title": {
+        "text":"Total Space Launches by Country",
+        "fontSize": 20
+    },
     "width": 800,
     "height": 400,
     "projection": {"type": "equalEarth"},

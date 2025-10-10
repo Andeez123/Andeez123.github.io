@@ -49,7 +49,7 @@
           "field": "Total_People",
           "type": "quantitative",
           "title": "Total People",
-          "scale": {"type": "sqrt", "scheme": "blues"},
+          "scale": {"type": "sqrt", "scheme": "reds"},
           "legend": {
             "title": "People in Space",
             "orient": "right",

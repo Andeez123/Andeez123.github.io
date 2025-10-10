@@ -13,14 +13,13 @@
         "min": 0,
         "max": 10,
         "step": 1,
-        "name": "Minimum People in Space: "
+        "name": "Minimum People Who Have been to Space: "
       }
     }
   ],
 
   "transform": [
-    {"filter": "datum.Total_People >= PeopleAbove"}
-  ],
+    {"filter": "datum.Total_People >= PeopleAbove"}  ],
 
   "layer": [
     {
@@ -30,7 +29,6 @@
           "field": "Entity",
           "type": "nominal",
           "title": "Country",
-          "sort": {"field": "Total_People", "order": "descending"},
           "axis": {
             "labelFontSize": 12,
             "labelFontWeight": "bold",
@@ -43,7 +41,7 @@
           "field": "Total_People",
           "type": "quantitative",
           "title": null,
-          "scale": {"type": "sqrt"}
+          "scale": {"type": "sqrt"},"sort": "-x"
         },
         "color": {
           "field": "Total_People",

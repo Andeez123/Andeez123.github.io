@@ -26,6 +26,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.element-with-hidden-scrollbar::-webkit-scrollbar {
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
   display: none;
 }

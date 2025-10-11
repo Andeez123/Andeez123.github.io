@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Launch cost per kilogram of payload by year and vehicle class, with interactive payload size filter.",
+  "width": 900,
+  "height": 400,
+  "data": {
+    "url": "cost-space-launches-low-earth-orbit.csv"
+  },
+  "params": [
+    {
+      "name": "payloadFilter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Heavy", "Medium", "Small"],
+        "labels": ["All payloads", "Heavy", "Medium", "Small"],
+        "name": "Filter by payload size: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "payloadFilter == 'All' || datum['Launch vehicle class'] == payloadFilter"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title": "Year of first successful launch",
+      "scale": {"domain": [1960, 2020]},
+      "axis": {"grid": false, "tickMinStep": 5}
+    },
+    "y": {
+      "field": "Launch cost per kilogram of payload",
+      "type": "quantitative",
+      "title": "Launch cost per kilogram of payload (US$)",
+      "axis": {"grid": false, "format": "~s"}
+    },
+    "color": {
+      "field": "Launch vehicle class",
+      "type": "nominal",
+      "title": "Payload size",
+      "scale": {
+        "domain": ["Heavy", "Medium", "Small"],
+        "range": ["#b9472c", "#4b4b7f", "#3bbcbf"]
+      }
+    },
+    "tooltip": [
+      {"field": "Entity", "title": "Launch Vehicle"},
+      {"field": "Year", "title": "Year"},
+      {"field": "Launch cost per kilogram of payload", "title": "Cost ($/kg)"},
+      {"field": "Launch vehicle class", "title": "Payload Class"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true, "size": 300}
+    }
+  ]
+}

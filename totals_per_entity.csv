@@ -1,100 +1,100 @@
-Entity,Code,Total_Launches
-Algeria,DZA,6
-Angola,AGO,2
-Argentina,ARG,22
-Armenia,ARM,2
-Australia,AUS,56
-Austria,AUT,4
-Azerbaijan,AZE,3
-Bangladesh,BGD,2
-Belarus,BLR,4
-Belgium,BEL,43
-Bhutan,BTN,1
-Bolivia,BOL,1
-Brazil,BRA,46
-Bulgaria,BGR,5
-Canada,CAN,112
-Chile,CHL,8
-China,CHN,1385
-Colombia,COL,3
-Costa Rica,CRI,1
-Croatia,HRV,1
-Czechia,CZE,12
-Denmark,DNK,14
-Djibouti,DJI,2
-Ecuador,ECU,2
-Egypt,EGY,14
-Estonia,EST,4
-Ethiopia,ETH,1
-Finland,FIN,34
-France,FRA,175
-Germany,DEU,132
-Ghana,GHA,1
-Greece,GRC,5
-Guatemala,GTM,1
-Hungary,HUN,9
-India,IND,155
-Indonesia,IDN,25
-Iran,IRN,20
-Ireland,IRL,1
-Israel,ISR,46
-Italy,ITA,96
-Japan,JPN,352
-Jordan,JOR,1
-Kazakhstan,KAZ,9
-Kenya,KEN,2
-Kuwait,KWT,1
-Laos,LAO,1
-Latvia,LVA,1
-Lithuania,LTU,13
-Luxembourg,LUX,95
-Malaysia,MYS,12
-Mauritius,MUS,1
-Mexico,MEX,18
-Moldova,MDA,1
-Monaco,MCO,1
-Mongolia,MNG,13
-Morocco,MAR,5
-Nepal,NPL,1
-Netherlands,NLD,17
-New Zealand,NZL,26
-Nigeria,NGA,4
-North Korea,PRK,3
-Norway,NOR,24
-Oman,OMN,1
-Pakistan,PAK,8
-Papua New Guinea,PNG,2
-Paraguay,PRY,1
-Peru,PER,4
-Philippines,PHL,9
-Poland,POL,18
-Portugal,PRT,3
-Qatar,QAT,1
-Romania,ROU,2
-Russia,RUS,3825
-Rwanda,RWA,7
-Saudi Arabia,SAU,17
-Senegal,SEN,1
-Singapore,SGP,28
-Slovakia,SVK,4
-Slovenia,SVN,3
-South Africa,ZAF,9
-South Korea,KOR,68
-Spain,ESP,69
-Sri Lanka,LKA,1
-Sweden,SWE,21
-Switzerland,CHE,24
-Taiwan,TWN,25
-Thailand,THA,15
-Tunisia,TUN,1
-Turkey,TUR,32
-Turkmenistan,TKM,1
-Uganda,UGA,1
-Ukraine,UKR,10
-United Arab Emirates,ARE,22
-United Kingdom,GBR,793
-United States of America,USA,11969
-Uruguay,URY,49
-Venezuela,VEN,4
-Vietnam,VNM,6
-Zimbabwe,ZWE,2
+Entity,Code,Total_Launches,Latitude,Longitude
+Algeria,DZA,6,28.0,3.0
+Angola,AGO,2,-12.5,18.5
+Argentina,ARG,22,-38.4,-63.6
+Armenia,ARM,2,40.1,45.0
+Australia,AUS,56,-25.0,133.0
+Austria,AUT,4,47.5,14.5
+Azerbaijan,AZE,3,40.1,47.5
+Bangladesh,BGD,2,23.7,90.4
+Belarus,BLR,4,53.7,28.0
+Belgium,BEL,43,50.8,4.5
+Bhutan,BTN,1,27.5,90.4
+Bolivia,BOL,1,-16.3,-63.6
+Brazil,BRA,46,-14.2,-51.9
+Bulgaria,BGR,5,42.7,25.5
+Canada,CAN,112,56.1,-106.3
+Chile,CHL,8,-35.7,-71.5
+China,CHN,1385,35.9,104.2
+Colombia,COL,3,4.6,-74.1
+Costa Rica,CRI,1,9.7,-83.8
+Croatia,HRV,1,45.1,15.2
+Czechia,CZE,12,49.8,15.5
+Denmark,DNK,14,56.3,9.5
+Djibouti,DJI,2,11.8,42.6
+Ecuador,ECU,2,-1.8,-78.2
+Egypt,EGY,14,26.8,30.8
+Estonia,EST,4,58.6,25.0
+Ethiopia,ETH,1,9.1,40.5
+Finland,FIN,34,64.0,26.0
+France,FRA,175,46.2,2.2
+Germany,DEU,132,51.2,10.4
+Ghana,GHA,1,7.9,-1.0
+Greece,GRC,5,39.1,22.9
+Guatemala,GTM,1,15.8,-90.2
+Hungary,HUN,9,47.1,19.5
+India,IND,155,20.6,78.9
+Indonesia,IDN,25,-0.8,113.9
+Iran,IRN,20,32.4,53.7
+Ireland,IRL,1,53.1,-8.0
+Israel,ISR,46,31.0,35.0
+Italy,ITA,96,41.9,12.6
+Japan,JPN,352,36.2,138.3
+Jordan,JOR,1,31.2,36.4
+Kazakhstan,KAZ,9,48.0,68.0
+Kenya,KEN,2,1.3,38.0
+Kuwait,KWT,1,29.3,47.5
+Laos,LAO,1,19.9,102.5
+Latvia,LVA,1,56.9,24.6
+Lithuania,LTU,13,55.2,23.9
+Luxembourg,LUX,95,49.8,6.1
+Malaysia,MYS,12,4.2,101.9
+Mauritius,MUS,1,-20.3,57.5
+Mexico,MEX,18,23.6,-102.6
+Moldova,MDA,1,47.0,28.9
+Monaco,MCO,1,43.7,7.4
+Mongolia,MNG,13,46.9,103.8
+Morocco,MAR,5,31.8,-7.1
+Nepal,NPL,1,28.4,84.1
+Netherlands,NLD,17,52.1,5.3
+New Zealand,NZL,26,-40.9,174.9
+Nigeria,NGA,4,9.1,8.7
+North Korea,PRK,3,40.3,127.5
+Norway,NOR,24,60.5,8.5
+Oman,OMN,1,21.5,55.9
+Pakistan,PAK,8,30.4,69.3
+Papua New Guinea,PNG,2,-6.3,143.9
+Paraguay,PRY,1,-23.4,-58.4
+Peru,PER,4,-9.2,-75.0
+Philippines,PHL,9,12.9,122.0
+Poland,POL,18,51.9,19.1
+Portugal,PRT,3,39.4,-8.2
+Qatar,QAT,1,25.3,51.2
+Romania,ROU,2,45.9,24.9
+Russia,RUS,3825,61.5,105.3
+Rwanda,RWA,7,-1.9,30.1
+Saudi Arabia,SAU,17,24.0,45.0
+Senegal,SEN,1,14.5,-14.4
+Singapore,SGP,28,1.3,103.8
+Slovakia,SVK,4,48.7,19.7
+Slovenia,SVN,3,46.2,14.9
+South Africa,ZAF,9,-30.6,22.9
+South Korea,KOR,68,36.5,128.0
+Spain,ESP,69,40.5,-3.7
+Sri Lanka,LKA,1,7.9,80.8
+Sweden,SWE,21,60.1,18.6
+Switzerland,CHE,24,46.8,8.2
+Taiwan,TWN,25,23.7,121.0
+Thailand,THA,15,15.9,100.99
+Tunisia,TUN,1,33.8,9.6
+Turkey,TUR,32,39.0,35.2
+Turkmenistan,TKM,1,38.9,59.6
+Uganda,UGA,1,1.4,32.3
+Ukraine,UKR,10,48.4,31.2
+United Arab Emirates,ARE,22,23.4,53.8
+United Kingdom,GBR,793,55.4,-3.4
+United States of America,USA,11969,37.1,-95.7
+Uruguay,URY,49,-32.5,-55.8
+Venezuela,VEN,4,6.4,-66.6
+Vietnam,VNM,6,14.1,108.3
+Zimbabwe,ZWE,2,-19.0,29.2

@@ -1,40 +1,40 @@
-Entity,Code,Total_People
-United States,USA,347
-Russia,RUS,124
-China,CHN,11
-Germany,DEU,11
-Japan,JPN,11
-France,FRA,10
-Canada,CAN,10
-Italy,ITA,7
-United Kingdom,GBR,3
-Kazakhstan,KAZ,2
-Netherlands,NLD,2
-Bulgaria,BGR,2
-Belgium,BEL,2
-Hungary,HUN,2
-Slovakia,SVK,2
-Cuba,CUB,1
-Afghanistan,AFG,1
-Austria,AUT,1
-Brazil,BRA,1
-Israel,ISR,1
-Iran,IRN,1
-India,IND,1
-Denmark,DNK,1
-Poland,POL,1
-Peru,PER,1
-Mongolia,MNG,1
-Mexico,MEX,1
-Malaysia,MYS,1
-South Africa,ZAF,1
-Romania,ROU,1
-Saudi Arabia,SAU,1
-Sweden,SWE,1
-Spain,ESP,1
-South Korea,KOR,1
-Switzerland,CHE,1
-United Arab Emirates,ARE,1
-Ukraine,UKR,1
-Syria,SYR,1
-Vietnam,VNM,1
+Entity,Code,Total_People,Latitude,Longitude
+United States,USA,347,37.0902,-95.7129
+Russia,RUS,124,61.5240,105.3188
+China,CHN,11,35.8617,104.1954
+Germany,DEU,11,51.1657,10.4515
+Japan,JPN,11,36.2048,138.2529
+France,FRA,10,46.2276,2.2137
+Canada,CAN,10,56.1304,-106.3468
+Italy,ITA,7,41.8719,12.5674
+United Kingdom,GBR,3,55.3781,-3.4360
+Kazakhstan,KAZ,2,48.0196,66.9237
+Netherlands,NLD,2,52.1326,5.2913
+Bulgaria,BGR,2,42.7339,25.4858
+Belgium,BEL,2,50.5039,4.4699
+Hungary,HUN,2,47.1625,19.5033
+Slovakia,SVK,2,48.6690,19.6990
+Cuba,CUB,1,21.5218,-77.7812
+Afghanistan,AFG,1,33.9391,67.7100
+Austria,AUT,1,47.5162,14.5501
+Brazil,BRA,1,-14.2350,-51.9253
+Israel,ISR,1,31.0461,34.8516
+Iran,IRN,1,32.4279,53.6880
+India,IND,1,20.5937,78.9629
+Denmark,DNK,1,56.2639,9.5018
+Poland,POL,1,51.9194,19.1451
+Peru,PER,1,-9.1900,-75.0152
+Mongolia,MNG,1,46.8625,103.8467
+Mexico,MEX,1,23.6345,-102.5528
+Malaysia,MYS,1,4.2105,101.9758
+South Africa,ZAF,1,-30.5595,22.9375
+Romania,ROU,1,45.9432,24.9668
+Saudi Arabia,SAU,1,23.8859,45.0792
+Sweden,SWE,1,60.1282,18.6435
+Spain,ESP,1,40.4637,-3.7492
+South Korea,KOR,1,35.9078,127.7669
+Switzerland,CHE,1,46.8182,8.2275
+United Arab Emirates,ARE,1,23.4241,53.8478
+Ukraine,UKR,1,48.3794,31.1656
+Syria,SYR,1,34.8021,38.9968
+Vietnam,VNM,1,14.0583,108.2772

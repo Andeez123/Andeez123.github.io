@@ -2,18 +2,18 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 900,
   "height": 400,
-  "title": "Total Space Launches by Country",
+  "title": "Total People who has been to space by Country",
   "projection": {"type": "equalEarth"},
   "params": [
     {
-      "name": "launchFilter",
+      "name": "PeopleAbove",
       "value": 0,
       "bind": {
         "input": "range",
         "min": 0,
-        "max": 200,
+        "max": 10,
         "step": 1,
-        "name": "Minimum Launches:"
+        "name": "Minimum People Who Have been to Space: "
       }
     }
   ],
@@ -26,10 +26,9 @@
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
-      "data": {"url": "totals_per_entity.csv"},
+      "data": {"url": "cumulated.csv"},
       "transform": [
-        {"filter": "datum.Total_Launches >= launchFilter"}
-      ],
+    {"filter": "datum.Total_People >= PeopleAbove"}  ],
       "mark": {
         "type": "circle",
         "opacity": 0.6,
@@ -40,20 +39,20 @@
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
         "size": {
-          "field": "Total_Launches",
+          "field": "Total_People",
           "type": "quantitative",
-          "title": "Total Launches",
-          "scale": {"range": [50, 1000]}
+          "title": "Total People",
+          "scale": {"range": [50, 200]}
         },
         "color": {
-          "field": "Total_Launches",
+          "field": "Total_People",
           "type": "quantitative",
-          "title": "Total Launches",
+          "title": "Total People",
           "scale": {"scheme": "reds"}
         },
         "tooltip": [
           {"field": "Entity", "type": "nominal", "title": "Country"},
-          {"field": "Total_Launches", "type": "quantitative", "title": "Launches"}
+          {"field": "Total_People", "type": "quantitative", "title": "People"}
         ]
       }
     },

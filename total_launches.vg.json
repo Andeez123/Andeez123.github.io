@@ -1,5 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "black",
+    "view": {"stroke": null},
     "width": 900,
     "height": 400,
     "projection": {"type": "equalEarth"},
@@ -28,9 +30,7 @@
             "field": "launches",
             "type": "quantitative",
             "scale": {"type": "log", "scheme": "reds"},
-            "legend": {
-                "title": "Number of launches per Country"
-            }
+            "legend": null
         },
         "tooltip": [
             {"field": "properties.NAME", "type": "nominal", "title": "Country"},

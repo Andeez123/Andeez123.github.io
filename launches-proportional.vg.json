@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 900,
   "height": 400,
-  "title": "Total Space Launches by Country",
   "projection": {"type": "equalEarth"},
   "params": [
     {
@@ -32,7 +31,7 @@
       ],
       "mark": {
         "type": "circle",
-        "opacity": 0.6,
+        "opacity": 0.5,
         "stroke": "black",
         "strokeWidth": 0.5
       },
@@ -43,7 +42,7 @@
           "field": "Total_Launches",
           "type": "quantitative",
           "title": "Total Launches",
-          "scale": {"range": [50, 1000]}
+          "scale": {"range": [100, 1500]}
         },
         "color": {
           "field": "Total_Launches",

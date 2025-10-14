@@ -3,7 +3,9 @@
   "width": 900,
   "height": 400,
   "data": {"url": "cumulated.csv"},
-  
+  "view": {"stroke": null},
+  "background": "black",
+
   "params": [
     {
       "name": "PeopleAbove",
@@ -28,20 +30,22 @@
         "x": {
           "field": "Entity",
           "type": "nominal",
-          "title": "Country",
           "axis": {
             "labelFontSize": 12,
-            "labelFontWeight": "bold",
             "titleFontSize": 18,
             "titlePadding": -5,
-            "labelAngle": -30
+            "labelAngle": -90,
+            "labelColor": "white"
           }
         },
         "y": {
           "field": "Total_People",
           "type": "quantitative",
           "title": null,
-          "scale": {"type": "sqrt"},"sort": "-x"
+          "scale": {"type": "sqrt"},"sort": "-x",
+          "axis":{
+            "labelColor": "white"
+          }
         },
         "color": {
           "field": "Total_People",
@@ -51,7 +55,11 @@
           "legend": {
             "title": "People in Space",
             "orient": "right",
-            "direction": "vertical"
+            "direction": "vertical",
+            "titleColor": "white",
+            "labelColor": "white",
+            "titleFontSize": 15,
+            "labelFontSize": 13
           }
         },
         "tooltip": [
@@ -67,7 +75,7 @@
           {"Entity": "United States", "Total_People": 397, "note": "Largest"}
         ]
       },
-      "mark": {"type": "text", "align": "center", "dy": 15, "fontSize": 11, "fontWeight": "bold", "color": "red"},
+      "mark": {"type": "text", "align": "center", "dy": 15, "fontSize": 11, "fontWeight": "bold", "color": "limegreen"},
       "encoding": {
         "x": {"field": "Entity", "type": "nominal"},
         "y": {"field": "Total_People", "type": "quantitative"},
@@ -81,7 +89,7 @@
           {"Entity": "Russia", "Total_People": 124, "note": "Second largest"}
         ]
       },
-      "mark": {"type": "text", "align": "center", "dy": -8, "fontSize": 11, "fontWeight": "bold", "color": "mediumblue"},
+      "mark": {"type": "text", "align": "center", "dy": -8, "fontSize": 11, "fontWeight": "bold", "color": "lightblue"},
       "encoding": {
         "x": {"field": "Entity", "type": "nominal"},
         "y": {"field": "Total_People", "type": "quantitative"},

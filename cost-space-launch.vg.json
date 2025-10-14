@@ -3,6 +3,8 @@
   "description": "Launch cost per kilogram of payload by year and vehicle class, with interactive payload size filter.",
   "width": 900,
   "height": 400,
+  "view": {"stroke": null},
+  "background": "black",
   "data": {
     "url": "cost-space-launches-low-earth-orbit.csv"
   },
@@ -29,13 +31,13 @@
       "type": "quantitative",
       "title": "Year of first successful launch",
       "scale": {"domain": [1960, 2020]},
-      "axis": {"grid": false, "tickMinStep": 5}
+      "axis": {"grid": false, "tickMinStep": 5, "labelColor":"white"}
     },
     "y": {
       "field": "Launch cost per kilogram of payload",
       "type": "quantitative",
       "title": "Launch cost per kilogram of payload (US$)",
-      "axis": {"grid": false, "format": "~s"}
+      "axis": {"grid": false, "format": "~s", "labelColor":"white"}
     },
     "color": {
       "field": "Launch vehicle class",
@@ -44,7 +46,9 @@
       "scale": {
         "domain": ["Heavy", "Medium", "Small"],
         "range": ["#b9472c", "#4b4b7f", "#3bbcbf"]
-      }
+      },
+      "legend": {"titleColor":"white", "labelColor":"white", "labelFontSize": 13,
+                  "titleFontSize": 15}
     },
     "tooltip": [
       {"field": "Entity", "title": "Launch Vehicle"},
@@ -55,7 +59,7 @@
   },
   "layer": [
     {
-      "mark": {"type": "point", "filled": true, "size": 300}
+      "mark": {"type": "point", "filled": true, "size": 350}
     }
   ]
 }

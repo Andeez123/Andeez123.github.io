@@ -1,0 +1,24 @@
+{
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "NASA Annual Budget from 1959 to 1971",
+            "width": 800,
+            "height": 400,
+            "data": {"url": "nasa-annual-budget.csv"},
+            "mark": {"type": "line", "point": true, "tooltip": true},
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "axis": {"title": "Year"}
+                },
+                "y": {
+                    "field": "Annual budget of NASA",
+                    "type": "quantitative",
+                    "axis": {"title": "Annual Budget (USD)", "format": "$,.0f"}
+                },
+                "tooltip": [
+                    {"field": "Year", "type": "temporal", "title": "Year"},
+                    {"field": "Annual budget of NASA", "type": "quantitative", "format": "$,.0f", "title": "Budget"}
+                ]
+            }
+        }

@@ -3,6 +3,7 @@
             "description": "NASA Annual Budget from 1959 to 1971",
             "width": 800,
             "height": 400,
+            "background": "black",
             "data": {"url": "nasa-annual-budget.csv"},
             "mark": {"type": "line", "point": true, "tooltip": true},
             "encoding": {
@@ -20,5 +21,21 @@
                     {"field": "Year", "type": "temporal", "title": "Year"},
                     {"field": "Annual budget of NASA", "type": "quantitative", "format": "$,.0f", "title": "Budget"}
                 ]
+            },
+            "config": {
+                "axis": {
+                    "labelColor": "white",
+                    "titleColor": "white",
+                    "gridColor": "#2a2f3a"
+                },
+                "legend": {
+                    "labelColor": "white",
+                    "titleColor": "white"
+                },
+                "header": {
+                    "labelColor": "white",
+                    "titleColor": "white"
+                },
+                "title": {"color": "white"}
             }
         }

@@ -21,7 +21,7 @@ h2, h3, h4 {
 
 #container2 {
     padding-bottom: 15px;
-    padding-left: 50px;
+    padding-left: 0;
     display: flex;
     justify-content: center;  
     align-items: center;      
@@ -30,21 +30,29 @@ h2, h3, h4 {
 
 #container3 {
     padding-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 0;
     display: flex;
     justify-content: center;  
     align-items: center;      
     width: 100%;
   }
 
+#container4 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 #descriptor{
   text-align: center;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white
+  font-family: 'IBM Plex Serif', serif;
+  background-color: #0b0e14;
+  color: #e6e6e6
 }
 
 html, body {
@@ -55,4 +63,38 @@ html, body {
 html::-webkit-scrollbar, 
 body::-webkit-scrollbar {
   display: none;
+}
+
+/* Card-like containers for charts */
+#chart_container > div,
+#container2 > div,
+#container3 > div,
+#container4 > div {
+  background: #121621;
+  border: 1px solid #1f2633;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Headings spacing */
+h2, h3, h4 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+/* Responsive chart widths */
+#map, #bar_chart, #bubble_chart, #nasa_budget {
+  max-width: 95vw;
+}
+
+.chart-description {
+  max-width: 900px;
+  margin: 8px auto 24px auto;
+  padding: 10px 14px;
+  background: #0f1320;
+  border: 1px solid #1f2633;
+  border-radius: 8px;
+  color: #cfd8e3;
+  line-height: 1.5;
 }

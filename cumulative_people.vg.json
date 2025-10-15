@@ -30,6 +30,7 @@
         "x": {
           "field": "Entity",
           "type": "nominal",
+          "sort": "-y",
           "axis": {
             "labelFontSize": 12,
             "titleFontSize": 18,
@@ -42,7 +43,7 @@
           "field": "Total_People",
           "type": "quantitative",
           "title": null,
-          "scale": {"type": "sqrt"},"sort": "-x",
+          "scale": {"type": "sqrt"},
           "axis":{
             "labelColor": "white"
           }

@@ -1,27 +1,48 @@
 {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "description": "NASA Annual Budget from 1959 to 1971",
-            "width": 800,
+            "width": 900,
             "height": 400,
             "background": "black",
             "data": {"url": "nasa-annual-budget.csv"},
-            "mark": {"type": "line", "point": true, "tooltip": true},
-            "encoding": {
-                "x": {
-                    "field": "Year",
-                    "type": "temporal",
-                    "axis": {"title": "Year"}
+            "layer": [
+                {
+                    "mark": {"type": "line", "point": true, "tooltip": true},
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "temporal",
+                            "axis": {"title": "Year"}
+                        },
+                        "y": {
+                            "field": "Annual budget of NASA",
+                            "type": "quantitative",
+                            "axis": {"title": "Annual Budget (USD)", "format": "$,.0f"}
+                        },
+                        "tooltip": [
+                            {"field": "Year", "type": "temporal", "title": "Year"},
+                            {"field": "Annual budget of NASA", "type": "quantitative", "format": "$,.0f", "title": "Budget"}
+                        ]
+                    }
                 },
-                "y": {
-                    "field": "Annual budget of NASA",
-                    "type": "quantitative",
-                    "axis": {"title": "Annual Budget (USD)", "format": "$,.0f"}
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1966"}],
+                    "mark": {"type": "point", "color": "red", "size": 80, "filled": true},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"}
+                    }
                 },
-                "tooltip": [
-                    {"field": "Year", "type": "temporal", "title": "Year"},
-                    {"field": "Annual budget of NASA", "type": "quantitative", "format": "$,.0f", "title": "Budget"}
-                ]
-            },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1966"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Cold War peak (1966)"}
+                    }
+                }
+            ],
             "config": {
                 "axis": {
                     "labelColor": "white",

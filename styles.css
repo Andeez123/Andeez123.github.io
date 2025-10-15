@@ -6,17 +6,20 @@ h1 {
 
 h2, h3, h4 {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
 #chart_container {
     padding-bottom: 20px;
-    /* padding-left: 70px; */
     display: flex;
     justify-content: center;  
-    align-items: center;      
+    align-items: stretch;      
+    gap: 16px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
   }
 
 #container2 {
@@ -24,25 +27,36 @@ h2, h3, h4 {
     padding-left: 0;
     display: flex;
     justify-content: center;  
-    align-items: center;      
+    align-items: stretch;      
+    gap: 16px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
 #container3 {
     padding-bottom: 15px;
     padding-left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;  
-    align-items: center;      
+    align-items: center;
+    gap: 16px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
 #container4 {
     padding-bottom: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #descriptor{
@@ -84,17 +98,58 @@ h2, h3, h4 {
 }
 
 /* Responsive chart widths */
-#map, #bar_chart, #bubble_chart, #nasa_budget {
+/* #map, #bar_chart, #bubble_chart, #nasa_budget {
   max-width: 95vw;
-}
+} */
 
 .chart-description {
-  max-width: 900px;
-  margin: 8px auto 24px auto;
+  min-width: 280px;
+  max-width: 420px;
+  margin: 0;
   padding: 10px 14px;
   background: #0f1320;
   border: 1px solid #1f2633;
   border-radius: 8px;
   color: #cfd8e3;
   line-height: 1.5;
+}
+
+/* Let the chart take more space than the description for first 2 charts */
+#chart_container #map,
+#container2 #bar_chart {
+  flex: 1 1 70%;
+}
+
+#chart_container .chart-description,
+#container2 .chart-description {
+  flex: 0 0 30%;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+/* For last 2 charts, make them fit content and stack vertically */
+#container3 #bubble_chart,
+#container4 #nasa_budget {
+  flex: none;
+  width: fit-content;
+  max-width: 100%;
+}
+
+#container3 .chart-description,
+#container4 .chart-description {
+  flex: none;
+  width: 100%;
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  #chart_container, #container2, #container3, #container4 {
+    flex-direction: column;
+  }
+  #chart_container .chart-description,
+  #container2 .chart-description,
+  #container3 .chart-description,
+  #container4 .chart-description {
+    max-width: 95vw;
+  }
 }

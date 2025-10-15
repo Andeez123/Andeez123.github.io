@@ -31,13 +31,13 @@
       "type": "quantitative",
       "title": "Year of first successful launch",
       "scale": {"domain": [1960, 2020]},
-      "axis": {"grid": false, "tickMinStep": 5, "labelColor":"white"}
+      "axis": {"grid": true, "gridColor": "#2a2f3a", "tickMinStep": 5, "labelColor":"white", "format": "d"}
     },
     "y": {
       "field": "Launch cost per kilogram of payload",
       "type": "quantitative",
       "title": "Launch cost per kilogram of payload (US$)",
-      "axis": {"grid": false, "format": "~s", "labelColor":"white"}
+      "axis": {"grid": true, "gridColor": "#2a2f3a", "format": "~s", "labelColor":"white"}
     },
     "color": {
       "field": "Launch vehicle class",

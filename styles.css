@@ -1,7 +1,29 @@
 h1 {
   text-align: center;
   font-family: 'IBM Plex Serif', serif;
-  color: dodgerblue;
+  color: white;
+}
+/* Header card */
+#header_card {
+    padding: 16px 20px;
+    margin: 16px auto 8px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 1200px;
+    max-width: 95vw;
+    background: #121621;
+    border: 1px solid #1f2633;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.dashboard-subtitle {
+  margin: 0;
+  color: #cfd8e3;
+  line-height: 1.6;
+  text-align: center;
 }
 
 h2, h3, h4 {
@@ -11,52 +33,67 @@ h2, h3, h4 {
 
 
 #chart_container {
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;  
-    align-items: stretch;      
-    gap: 16px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-direction: row-reverse;
-  }
-
-#container2 {
-    padding-bottom: 15px;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;  
-    align-items: stretch;      
-    gap: 16px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-#container3 {
-    padding-bottom: 15px;
-    padding-left: 0;
+    padding: 12px;
+    margin: 16px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    gap: 16px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 12px;
+    width: 1200px;
+    max-width: 95vw;
+    background: #121621;
+    border: 1px solid #1f2633;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  }
+
+#container2 {
+    padding: 12px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    gap: 12px;
+    width: 1200px;
+    max-width: 95vw;
+    background: #121621;
+    border: 1px solid #1f2633;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  }
+
+#container3 {
+    padding: 12px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    gap: 12px;
+    width: 1200px;
+    max-width: 95vw;
+    background: #121621;
+    border: 1px solid #1f2633;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
   }
 
 #container4 {
-    padding-bottom: 30px;
+    padding: 12px;
+    margin: 16px auto 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 12px;
+    width: 1200px;
+    max-width: 95vw;
+    background: #121621;
+    border: 1px solid #1f2633;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 #descriptor{
@@ -79,17 +116,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Card-like containers for charts */
-#chart_container > div,
-#container2 > div,
-#container3 > div,
-#container4 > div {
-  background: #121621;
-  border: 1px solid #1f2633;
-  border-radius: 10px;
-  padding: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-}
+/* Description box inside each card */
 
 /* Headings spacing */
 h2, h3, h4 {
@@ -104,27 +131,22 @@ h2, h3, h4 {
 
 .chart-description {
   min-width: 280px;
-  max-width: 420px;
+  max-width: 720px;
   margin: 0;
-  padding: 10px 14px;
-  background: #0f1320;
-  border: 1px solid #1f2633;
-  border-radius: 8px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   color: #cfd8e3;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Let the chart take more space than the description for first 2 charts */
-#chart_container #map,
-#container2 #bar_chart {
-  flex: 1 1 70%;
-}
-
+/* Stack description above chart for first two containers */
 #chart_container .chart-description,
 #container2 .chart-description {
-  flex: 0 0 30%;
-  height: fit-content;
-  align-self: flex-start;
+  flex: none;
+  width: 100%;
+  max-width: none;
 }
 
 /* For last 2 charts, make them fit content and stack vertically */
@@ -142,7 +164,10 @@ h2, h3, h4 {
   max-width: none;
 }
 
-@media (max-width: 900px) {
+/* Make visual 2 description more spread out */
+
+
+@media (max-width: 800px) {
   #chart_container, #container2, #container3, #container4 {
     flex-direction: column;
   }

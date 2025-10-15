@@ -20,12 +20,16 @@
 </head>
 
 <body>
-    <h1> Spaceflight Data by Country </h1>
+    <div id="header_card">
+        <h1> Spaceflight Data by Country </h1>
+        <p class="dashboard-subtitle">An interactive dashboard exploring global spaceflight activity: total launches, people sent to space, launch cost trends, and NASA's annual budget. The data in this dashboard is dominated
+            by the United States, and then the Soviet Union, which is now Russia. Most of the trends can be related to the space race and the cold war in the 1950s and 1960s between the two countries.
+        </p>
+    </div>
 
     <h2>Total Space Launches by Country</h2>
     
     <div id="chart_container">
-        <div id = "map"></div>
         <div class="chart-description">
         <p>Choropleth map of total space launches by country. Countries with higher launch counts are highlighted with a darker color
             The data starts from as far back as 1957, when the first satellite was launched by the Soviet Union. From this map, we can see 
@@ -33,14 +37,15 @@
             closest competitor.
             </p>
         </div>
+        <div id = "map"></div>
     </div>
     
     <h3>Number of People Who Have Been To Space per Country</h3>
     <div id="container2">
-        <div id = "bar_chart"></div>
         <div class="chart-description">
         <p>This bar chart tracks human spaceflight participation since Yuri Gagarin's historic 1961 flight. The data reveals a dramatic disparity: the United States has sent 347 people to space (nearly 3x more than any other nation), while Russia follows with 124 astronauts. China ranks third with just 11 people, reflecting its later entry into human spaceflight. The data underscores the immense cost and complexity of human space programs, limiting participation to only the most resource-rich nations.</p>
         </div>
+        <div id = "bar_chart"></div>
     </div>
 
     <h4> Cost of launching to space (per rocket class)</h4>

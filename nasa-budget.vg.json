@@ -25,6 +25,15 @@
                         ]
                     }
                 },
+                {   
+                    "transform": [{"filter": "year(datum['Year']) == 1959"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "NASA begins (1959)"}
+                    }
+                },
                 {
                     "transform": [{"filter": "year(datum['Year']) == 1966"}],
                     "mark": {"type": "point", "color": "red", "size": 80, "filled": true},
@@ -40,6 +49,51 @@
                         "x": {"field": "Year", "type": "temporal"},
                         "y": {"field": "Annual budget of NASA", "type": "quantitative"},
                         "text": {"value": "Cold War peak (1966)"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1969"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Apollo 11 Moon landing (1969)"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1981"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Space Shuttle era begins (1981)"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 2004"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Constellation program announced (2004)"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 2011"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Shuttle retired (2011)"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 2020"}],
+                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
+                        "text": {"value": "Artemis era (2020s)"}
                     }
                 }
             ],

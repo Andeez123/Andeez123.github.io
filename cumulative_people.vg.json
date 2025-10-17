@@ -51,10 +51,14 @@
         "color": {
           "field": "Total_People",
           "type": "quantitative",
-          "title": "Total People",
-          "scale": {"type": "sqrt", "scheme": "reds"},
+          "title": "Total People (tiers)",
+          "scale": {
+            "type": "threshold",
+            "domain": [5, 50, 200],
+            "range": ["#cfe1f2", "#8fbadd", "#3f7fb6", "#0b3c68"]
+          },
           "legend": {
-            "title": "People in Space",
+            "title": "People in Space (tiers)",
             "orient": "right",
             "direction": "vertical",
             "titleColor": "white",
@@ -76,7 +80,7 @@
           {"Entity": "United States", "Total_People": 397, "note": "Largest"}
         ]
       },
-      "mark": {"type": "text", "align": "center", "dy": 15, "fontSize": 11, "fontWeight": "bold", "color": "limegreen"},
+      "mark": {"type": "text", "align": "center", "dy": 15, "fontSize": 11, "fontWeight": "bold", "color": "lightblue"},
       "encoding": {
         "x": {"field": "Entity", "type": "nominal"},
         "y": {"field": "Total_People", "type": "quantitative"},

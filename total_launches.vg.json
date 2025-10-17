@@ -32,16 +32,38 @@
             "transform": [
                 {"filter": "datum.Total_Launches >= 100"}
             ],
-            "mark": {"type": "circle", "opacity": 0.9, "stroke": "white", "strokeWidth": 0.5},
+            "mark": {"type": "circle", "opacity": 0.8, "stroke": "white", "strokeWidth": 0.5},
             "encoding": {
                 "longitude": {"field": "Longitude", "type": "quantitative"},
                 "latitude": {"field": "Latitude", "type": "quantitative"},
                 "size": {"field": "Total_Launches", "type": "quantitative", "scale": {"type": "sqrt", "range": [150, 3500]}, "legend": null},
-                "color": {"field": "Total_Launches", "type": "quantitative", "scale": {"scheme": "reds"}, "legend": null},
+                "color": {
+                    "field": "Total_Launches",
+                    "type": "quantitative",
+                    "title": "Total Launches (tiers)",
+                    "scale": {
+                        "type": "threshold",
+                        "domain": [130, 350, 800, 1000],
+                        "range": ["#c7d4eb", "#9fb9da", "#6a97c2", "#2f66a2", "#0b3c68"]
+                    },
+                    "legend": {"title": "Total Launches (tiers)", "labelColor": "white", "titleColor": "white"}
+                },
                 "tooltip": [
                     {"field": "Entity", "type": "nominal", "title": "Country"},
                     {"field": "Total_Launches", "type": "quantitative", "title": "Total launches", "format": ".2s"}
                 ]
+            }
+        },
+        {
+            "data": {"url": "totals_per_entity.csv"},
+            "transform": [
+                {"filter": "datum.Total_Launches >= 100"}
+            ],
+            "mark": {"type": "text", "align": "center", "dy": -8, "fontSize": 10, "color": "#e82c2c"},
+            "encoding": {
+                "longitude": {"field": "Longitude", "type": "quantitative"},
+                "latitude": {"field": "Latitude", "type": "quantitative"},
+                "text": {"field": "Entity", "type": "nominal"}
             }
         }
     ]

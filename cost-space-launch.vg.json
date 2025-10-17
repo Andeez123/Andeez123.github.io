@@ -53,7 +53,7 @@
     "tooltip": [
       {"field": "Entity", "title": "Launch Vehicle"},
       {"field": "Year", "title": "Year"},
-      {"field": "Launch cost per kilogram of payload", "title": "Cost ($/kg)"},
+      {"field": "Launch cost per kilogram of payload", "title": "Cost ($/kg)", "format": ",.0f"},
       {"field": "Launch vehicle class", "title": "Payload Class"}
     ]
   },

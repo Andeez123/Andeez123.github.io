@@ -12,7 +12,7 @@ h1 {
     align-items: center;
     gap: 8px;
     width: 1200px;
-    max-width: 95vw;
+    max-width: 50vw;
     background: #121621;
     border: 1px solid #1f2633;
     border-radius: 12px;
@@ -24,6 +24,9 @@ h1 {
   color: #cfd8e3;
   line-height: 1.6;
   text-align: center;
+  max-width: 62ch; /* constrain header text width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2, h3, h4 {
@@ -40,7 +43,7 @@ h2, h3, h4 {
     justify-content: center;  
     align-items: center;
     gap: 12px;
-    width: 1200px;
+    width: 1100px;
     max-width: 95vw;
     background: #121621;
     border: 1px solid #1f2633;
@@ -56,7 +59,7 @@ h2, h3, h4 {
     justify-content: center;  
     align-items: center;
     gap: 12px;
-    width: 1200px;
+    width: 1150px;
     max-width: 95vw;
     background: #121621;
     border: 1px solid #1f2633;
@@ -72,7 +75,7 @@ h2, h3, h4 {
     justify-content: center;  
     align-items: center;
     gap: 12px;
-    width: 1200px;
+    width: 1100px;
     max-width: 95vw;
     background: #121621;
     border: 1px solid #1f2633;
@@ -88,7 +91,7 @@ h2, h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    width: 1200px;
+    width: 1100px;
     max-width: 95vw;
     background: #121621;
     border: 1px solid #1f2633;
@@ -131,14 +134,18 @@ h2, h3, h4 {
 
 .chart-description {
   min-width: 280px;
-  max-width: 720px;
+  max-width: 45ch; /* tighter target ≈ 12 words per line */
   margin: 0;
   padding: 0;
   background: transparent;
   border: none;
   border-radius: 0;
   color: #cfd8e3;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; /* sans-serif for text boxes */
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
 }
 
 /* Stack description above chart for first two containers */

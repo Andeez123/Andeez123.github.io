@@ -131,10 +131,13 @@ h2, h3, h4 {
 /* #map, #bar_chart, #bubble_chart, #nasa_budget {
   max-width: 95vw;
 } */
+.chart-description{
+  max-width: 95ch;
+  text-align: center;
+}
 
-.chart-description {
+/* .chart-description {
   min-width: 280px;
-  max-width: 45ch; /* tighter target ≈ 12 words per line */
   margin: 0;
   padding: 0;
   background: transparent;
@@ -146,7 +149,7 @@ h2, h3, h4 {
   overflow-wrap: break-word;
   word-break: normal;
   hyphens: none;
-}
+} */
 
 /* Stack description above chart for first two containers */
 #chart_container .chart-description,
@@ -203,4 +206,4 @@ h2, h3, h4 {
   letter-spacing: 0.2px;
 }
 
-.links a { color: #2541B2; text-decoration: none; }
+.links a { color: white; text-decoration: none; }

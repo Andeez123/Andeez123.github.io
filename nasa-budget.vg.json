@@ -53,6 +53,14 @@
                 },
                 {
                     "transform": [{"filter": "year(datum['Year']) == 1969"}],
+                    "mark": {"type": "point", "color": "red", "size": 80, "filled": true},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1969"}],
                     "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
                     "encoding": {
                         "x": {"field": "Year", "type": "temporal"},
@@ -62,7 +70,15 @@
                 },
                 {
                     "transform": [{"filter": "year(datum['Year']) == 1981"}],
-                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "mark": {"type": "point", "color": "red", "size": 80, "filled": true},
+                    "encoding": {
+                        "x": {"field": "Year", "type": "temporal"},
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"}
+                    }
+                },
+                {
+                    "transform": [{"filter": "year(datum['Year']) == 1981"}],
+                    "mark": {"type": "text", "align": "left", "dx": -8, "dy": 20, "color": "white"},
                     "encoding": {
                         "x": {"field": "Year", "type": "temporal"},
                         "y": {"field": "Annual budget of NASA", "type": "quantitative"},
@@ -70,30 +86,20 @@
                     }
                 },
                 {
-                    "transform": [{"filter": "year(datum['Year']) == 2004"}],
-                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "transform": [{"filter": "year(datum['Year']) == 2011"}],
+                    "mark": {"type": "point", "color": "red", "size": 80, "filled": true},
                     "encoding": {
                         "x": {"field": "Year", "type": "temporal"},
-                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
-                        "text": {"value": "Constellation program announced (2004)"}
+                        "y": {"field": "Annual budget of NASA", "type": "quantitative"}
                     }
                 },
                 {
                     "transform": [{"filter": "year(datum['Year']) == 2011"}],
-                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
+                    "mark": {"type": "text", "align": "left", "dx": 2, "dy": -16, "color": "white"},
                     "encoding": {
                         "x": {"field": "Year", "type": "temporal"},
                         "y": {"field": "Annual budget of NASA", "type": "quantitative"},
                         "text": {"value": "Shuttle retired (2011)"}
-                    }
-                },
-                {
-                    "transform": [{"filter": "year(datum['Year']) == 2020"}],
-                    "mark": {"type": "text", "align": "left", "dx": 6, "dy": -8, "color": "white"},
-                    "encoding": {
-                        "x": {"field": "Year", "type": "temporal"},
-                        "y": {"field": "Annual budget of NASA", "type": "quantitative"},
-                        "text": {"value": "Artemis era (2020s)"}
                     }
                 }
             ],

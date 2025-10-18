@@ -152,7 +152,7 @@ h2, h3, h4 {
 } */
 
 /* Stack description above chart for first two containers */
-#chart_container .chart-description,
+
 #container2 .chart-description {
   flex: none;
   width: 100%;
